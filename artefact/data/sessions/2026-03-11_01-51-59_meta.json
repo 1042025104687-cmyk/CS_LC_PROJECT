@@ -1,0 +1,500 @@
+{
+  "session": {
+    "id": "2026-03-11_01-51-59",
+    "start_time": "2026-03-11 01:51:59",
+    "end_time": null,
+    "source": "sensor",
+    "scenario": "",
+    "readings_count": 98,
+    "csv_file": "2026-03-11_01-51-59.csv",
+    "meta_file": "2026-03-11_01-51-59_meta.json"
+  },
+  "alerts": [],
+  "advice": [
+    {
+      "timestamp": "2026-03-11 01:52:00",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:02",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:04",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:06",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:08",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:10",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:12",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:14",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:16",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:18",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:20",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:22",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:24",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:26",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:28",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:30",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:32",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:34",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:36",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:38",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:40",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:42",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:44",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:46",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:48",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:50",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:52",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:54",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:56",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:52:59",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:01",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:03",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:05",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:07",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:09",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:11",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:13",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:15",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:17",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:19",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:21",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:23",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:25",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:27",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:29",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:31",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:33",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:35",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:37",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:39",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:41",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:43",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:45",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:47",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:49",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:51",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:53",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:55",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:57",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:53:59",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:01",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:03",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:05",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:07",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:09",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:11",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:13",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:15",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:17",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:19",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:21",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:23",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:25",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:27",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:29",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:31",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:33",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:35",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:37",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:39",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:41",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:43",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:45",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:47",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:49",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:51",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:53",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:55",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:57",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:54:59",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:55:01",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:55:03",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:55:05",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:55:07",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:55:09",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:55:11",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-11 01:55:13",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    }
+  ]
+}

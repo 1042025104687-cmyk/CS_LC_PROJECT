@@ -1,0 +1,14 @@
+{
+  "session": {
+    "id": "2026-03-11_02-45-37",
+    "start_time": "2016-03-22 16:27:33",
+    "end_time": "2016-03-22 16:30:57",
+    "source": "microbit_import",
+    "scenario": "",
+    "readings_count": 197,
+    "csv_file": "2026-03-11_02-45-37.csv",
+    "meta_file": "2026-03-11_02-45-37_meta.json"
+  },
+  "alerts": [],
+  "advice": []
+}

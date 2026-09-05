@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Investigation</h1>
+    <div class="page-wrapper">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meeting_the_brief.html">Meeting Brief</a></li>
+            <li><a href="investigation.html" class="active">Investigation</a></li>
+            <li><a href="plan_and_design.html">Plan & Design</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-layout">
+        <aside>
+            <div class="toc">
+                <h3>On this page</h3>
+                <ul>
+                    <li><a href="#analysis">Analysis</a></li>
+                    <li><a href="#existing">Existing Solutions</a></li>
+                    <li><a href="#direction">Project Direction</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content">
+            <section id="analysis">
+                <h2>Analysis of Project Brief</h2>
+                <p>I researched this year's brief on protecting forests. Forests are vital for carbon storage, wildlife habitats, and climate regulation, yet they face growing wildfire threats.</p>
+                <p>According to <a href="https://civil-protection-humanitarian-aid.ec.europa.eu/news-stories/news/2023-among-5-worst-years-wildfires-europe-commission-report-shows-2024-11-19_en#:~:text=Last%20year%2C%20Europe%2C%20the%20Middle,in%20Europe%20published%20this%20year." target="_blank" rel="noopener noreferrer">EFFIS</a>, over 500,000 hectares burned in the EU in 2023, with climate change increasing fire frequency by approximately 20% over the past decade. Met Éireann data confirms rising Irish temperatures, elevating local fire risk.</p>
+                <p>I believe embedded systems paired with predictive models can address this by gathering real-time environmental data and identifying dangerous patterns automatically.</p>
+            </section>
+
+            <section id="existing">
+                <h2>Existing Solutions</h2>
+                <p>I examined wildfire prevention and environmental monitoring systems to understand effective approaches and gather ideas for my project.</p>
+
+                <div class="dropdown-row">
+                    <div class="dropdown" onclick="toggleDropdown(this)">
+                        <div class="dropdown-header">Water Cannon Village</div>
+                        <div class="dropdown-content">
+                            <p><strong>Source:</strong> A traditional Japanese fire festival using coordinated water spraying. <a href="https://www.thisiscolossal.com/2020/10/water-hose-festival-japan/" target="_blank" rel="noopener noreferrer">[Link]</a></p>
+                            <p><strong>Finding:</strong> This approach relies entirely on human reaction with no automated sensing or prediction capability.</p>
+                            <p><strong>Decision:</strong> My system needs automatic sensors and real-time risk assessment to remove human delay.</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" onclick="toggleDropdown(this)">
+                        <div class="dropdown-header">IoT Forest Monitor</div>
+                        <div class="dropdown-content">
+                            <p><strong>Source:</strong> An open-source project using temperature, humidity, and flame sensors with Wi-Fi alerts. <a href="https://www.dfrobot.com/blog-1292.html" target="_blank" rel="noopener noreferrer">[Link]</a></p>
+                            <p><strong>Finding:</strong> This demonstrated that small embedded systems can provide effective low-cost monitoring with real-time notifications.</p>
+                            <p><strong>Decision:</strong> I will adopt a similar sensor-based approach using the micro:bit to collect environmental data and provide user feedback.</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown" onclick="toggleDropdown(this)">
+                        <div class="dropdown-header">Low-Cost WSN Fire Detection</div>
+                        <div class="dropdown-content">
+                            <p><strong>Source:</strong> A research paper on wireless sensor networks for forest fire detection. <a href="https://doi.org/10.37394/232015.2023.19.49" target="_blank" rel="noopener noreferrer">[Link]</a></p>
+                            <p><strong>Finding:</strong> The study achieved high detection accuracy with low operating costs using distributed environmental sensors.</p>
+                            <p><strong>Decision:</strong> My system will follow this approach: real-time sensors, GUI-based alerts, and actionable harm-reduction feedback.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="direction">
+                <h2>Project Direction and Research Summary</h2>
+                <p>Based on my research, I decided to build a system that collects temperature and light data from a micro:bit via serial connection, calculates wildfire and drought risk using a predictive model, and streams real-time feedback via a Python GUI.</p>
+                <p>I will use Python's built-in serial library for micro:bit communication and store session data in CSV format for easy analysis. For the GUI, I plan to use Tkinter; if it proves limiting, PyQt would be an alternative. The interface will prioritise clarity with colour-coded risk indicators and actionable harm-reduction advice.</p>
+                <p>This approach delivers a practical, low-cost monitoring solution aligned with the research findings.</p>
+                <a href="#" class="back-to-top">Back to top</a>
+            </section>
+        </div>
+    </main>
+    </div>
+    <script>
+        function toggleDropdown(element) {
+            const wasActive = element.classList.contains('active');
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+            if (!wasActive) {
+                element.classList.add('active');
+            }
+        }
+</script>
+</body>
+</html>

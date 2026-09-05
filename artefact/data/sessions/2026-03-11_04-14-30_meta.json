@@ -1,0 +1,14 @@
+{
+  "session": {
+    "id": "2026-03-11_04-14-30",
+    "start_time": "2026-03-11 04:14:30",
+    "end_time": "2026-03-11 04:14:30",
+    "source": "sensor",
+    "scenario": "",
+    "readings_count": 0,
+    "csv_file": "2026-03-11_04-14-30.csv",
+    "meta_file": "2026-03-11_04-14-30_meta.json"
+  },
+  "alerts": [],
+  "advice": []
+}

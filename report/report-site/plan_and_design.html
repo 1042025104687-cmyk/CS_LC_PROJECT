@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan & Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Plan & Design</h1>
+    <div class="page-wrapper">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meeting_the_brief.html">Meeting Brief</a></li>
+            <li><a href="investigation.html">Investigation</a></li>
+            <li><a href="plan_and_design.html" class="active">Plan & Design</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-layout">
+        <aside>
+            <div class="toc">
+                <h3>On this page</h3>
+                <ul>
+                    <li><a href="#chosen">Chosen Project</a></li>
+                    <li><a href="#alternatives">Alternative Options</a></li>
+                    <li><a href="#stakeholders">Stakeholder Needs</a></li>
+                    <li><a href="#plan">Design Plan</a></li>
+                    <li><a href="#technologies">Technologies Used</a></li>
+                    <li><a href="#architecture">System Architecture</a></li>
+                    <li><a href="#flow">System Flow</a></li>
+                    <li><a href="#microbit-flow">Micro:bit Flowchart</a></li>
+                    <li><a href="#python-model">Python Model Flowchart</a></li>
+                    <li><a href="#test-plan">Test Plan</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content">
+            <section id="chosen">
+                <h2>Chosen Project</h2>
+                <p>I will develop a Forest Fire Prevention System that uses micro:bit data to detect environmental conditions indicative of drought or wildfire risk.</p>
+                <p>The system reads temperature and light levels, calculates a risk score via a python script, and provides user feedback to demonstrate how embedded systems can address climate-related environmental threats.</p>
+            </section>
+
+            <section id="alternatives">
+                <h2>Alternative Options</h2>
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Criteria</th>
+                            <th>Forest Risk Prevention (Chosen)</th>
+                            <th>Drought/Flooding Detection System</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sensors Used</td>
+                            <td>Temperature + Light</td>
+                            <td>Moisture + Temperature</td>
+                        </tr>
+                        <tr>
+                            <td>Model Type</td>
+                            <td>Weighted linear wildfire risk score</td>
+                            <td>Threshold-based irrigation trigger</td>
+                        </tr>
+                        <tr>
+                            <td>What-If Potential</td>
+                            <td>Stress tests and multi-day trend simulations</td>
+                            <td>Limited — binary wet/dry outcome</td>
+                        </tr>
+                        <tr>
+                            <td>Brief Alignment</td>
+                            <td>Directly addresses wildfire and climate threats to forests</td>
+                            <td>Directly relates to biodiversity and ecosystems</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>I chose the Forest Risk Prevention System for three reasons. First, I do not have access to moisture checking hardware. Second, what-if models are easier to build for this system. Third, it fits better with the brief.</p>
+            </section>
+
+            <section id="stakeholders">
+                <h2>Stakeholder Needs</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <strong>Environmental Monitors</strong>
+                        <p>Need an early warning system to detect dangerous conditions before they escalate.</p>
+                    </div>
+                    <div class="tech-item">
+                        <strong>Local Communities</strong>
+                        <p>Need awareness of environmental risks like drought and wildfire that threaten safety.</p>
+                    </div>
+                    <div class="tech-item">
+                        <strong>End User</strong>
+                        <p>Requires a simple interface showing readings, risk levels, and actionable advice.</p>
+                    </div>
+                    <div class="tech-item">
+                        <strong>Teacher or Examiner</strong>
+                        <p>Must see that the project integrates an embedded system, computer model, and feedback loop.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="plan">
+                <h2>Design Plan</h2>
+                <ol class="design-objectives">
+                    <li><strong>Manual start/auto operation</strong> — Start via button; system runs autonomously (BR3).</li>
+                    <li><strong>Analogue sensor input</strong> — Read temperature and light from micro:bit (BR2).</li>
+                    <li><strong>Data logging</strong> — Save timestamped readings to CSV for review (BR5).</li>
+                    <li><strong>Simulation scenarios</strong> — 7 scenarios testing varied conditions (BR6).</li>
+                    <li><strong>Risk scoring</strong> — 0–100 score using a weighted formula (AR1).</li>
+                    <li><strong>What-if analysis</strong> — Stress and trend tests to predict outcomes (AR2).</li>
+                    <li><strong>Adaptive escalation</strong> — Adjust sensitivity based on sustained risk (AR3).</li>
+                    <li><strong>Visual/Audio feedback</strong> — LED patterns and sounds for risk levels (BR4).</li>
+                </ol>
+            </section>
+
+            <section id="technologies">
+                <h2>Technologies Used</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <strong>Python/Tkinter</strong>
+                        <p>Logic and multi-tab GUI (Dashboard, Graphs, Alerts, Settings).</p>
+                    </div>
+                    <div class="tech-item">
+                        <strong>BBC Micro:bit</strong>
+                        <p>Embedded device for sensor input and LED/audio output.</p>
+                    </div>
+                    <div class="tech-item">
+                        <strong>PySerial</strong>
+                        <p>Manages USB communication between micro:bit and desktop app.</p>
+                    </div>
+                    <div class="tech-item">
+                        <strong>Pandas/NumPy</strong>
+                        <p>Handles CSV operations and numerical model calculations.</p>
+                    </div>
+                    <div class="tech-item">
+                        <strong>Persistent Data Storage</strong>
+                        <p>JSON for configuration; CSV for session data logging.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="architecture">
+                <h2>System Architecture</h2>
+                <p>This diagram shows an abstracted view of the system's architecture.</p>
+                <div class="system-architecture-container">
+                    <div class="architecture-zoom-viewport" id="architectureZoomViewport">
+                        <div class="architecture-zoom-content" id="architectureZoomContent">
+                            <img src="../resources/img/System-Architechture.svg" alt="System Architecture Diagram showing modular components: SerialManager, DataProcessor, RiskEngine, WildfireModel, AlertManager, and GUI" id="architectureImage">
+                        </div>
+                        <div class="zoom-controls">
+                            <button class="zoom-btn" id="zoomInBtn" title="Zoom In">+</button>
+                            <button class="zoom-btn" id="zoomOutBtn" title="Zoom Out">-</button>
+                            <button class="zoom-btn" id="zoomResetBtn" title="Reset Zoom">↺</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="flow">
+                <h2>System Flow</h2>
+                <p>This diagram shows how data moves through the system in a simple way.</p>
+                <div class="system-architecture-container">
+                    <div class="architecture-zoom-viewport" id="flowZoomViewport">
+                        <div class="architecture-zoom-content" id="flowZoomContent">
+                            <img src="../resources/img/Data-flow.svg" alt="System Flow Diagram" class="system-flow-image" id="flowImage">
+                        </div>
+                        <div class="zoom-controls">
+                            <button class="zoom-btn" id="flowZoomInBtn" title="Zoom In">+</button>
+                            <button class="zoom-btn" id="flowZoomOutBtn" title="Zoom Out">-</button>
+                            <button class="zoom-btn" id="flowZoomResetBtn" title="Reset Zoom">↺</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="microbit-flow">
+                <h2>Micro:bit Logic Flowchart</h2>
+                <p>This flowchart shows how the micro:bit python code works. It shows how the system meets <strong>BR1</strong>, <strong>BR2</strong>, and <strong>BR4</strong> (show LED and play sound).</p>
+                <div class="system-architecture-container">
+                    <div class="architecture-zoom-viewport zoomable-diagram" id="microbitZoomViewport">
+                        <div class="architecture-zoom-content" id="microbitZoomContent">
+                            <img src="../resources/img/merflow/MicrobitFlowchart.svg" alt="Micro:bit Flowchart showing button start, sensor reading loop, UART communication, and LED/audio feedback based on risk level" id="microbitImage">
+                        </div>
+                        <div class="zoom-controls">
+                            <button class="zoom-btn" data-action="zoomIn" title="Zoom In">+</button>
+                            <button class="zoom-btn" data-action="zoomOut" title="Zoom Out">-</button>
+                            <button class="zoom-btn" data-action="zoomReset" title="Reset Zoom">↺</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="python-model">
+                <h2>Python Model Flowchart</h2>
+                <p>This flowchart shows how the python system works. It includes risk calculation, adaptive thresholds, and what-if tests. It shows how the system meets <strong>AR1</strong> (computer-based model), <strong>AR2</strong> (what-if analysis), and <strong>AR3</strong> (adaptive behaviour).</p>
+                <div class="system-architecture-container">
+                    <div class="architecture-zoom-viewport zoomable-diagram" id="pythonZoomViewport">
+                        <div class="architecture-zoom-content" id="pythonZoomContent">
+                            <img src="../resources/img/merflow/PythonModel.svg" alt="Python Model Flowchart showing data processing, risk engine calculation, adaptive threshold escalation, what-if analysis, and feedback generation" id="pythonImage">
+                        </div>
+                        <div class="zoom-controls">
+                            <button class="zoom-btn" data-action="zoomIn" title="Zoom In">+</button>
+                            <button class="zoom-btn" data-action="zoomOut" title="Zoom Out">-</button>
+                            <button class="zoom-btn" data-action="zoomReset" title="Reset Zoom">↺</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="test-plan">
+                <h2>Test Plan</h2>
+                <div class="test-plan-grid">
+                    <div class="test-plan-item">
+                        <strong>Unit Testing</strong>
+                        <p>Pytest tests for risk_engine, wildfire_model, and data managers.</p>
+                    </div>
+                    <div class="test-plan-item">
+                        <strong>Integration Testing</strong>
+                        <p>Testing micro:bit serial connection and communication/calculation process.</p>
+                    </div>
+                    <div class="test-plan-item">
+                        <strong>Simulation Testing</strong>
+                        <p>Stress and trend tests against various scenarios.</p>
+                    </div>
+                    <div class="test-plan-item">
+                        <strong>User Testing</strong>
+                        <p>Gain feedback from classmates on the usability.</p>
+                    </div>
+                </div>
+                <a href="#" class="back-to-top">Back to top</a>
+            </section>
+        </div>
+    </main>
+    </div>
+    
+    <script>
+        // Reusable zoom and pan functionality for diagram viewers
+        function initZoomViewer(viewportId, contentId, imageId) {
+            const zoomViewport = document.getElementById(viewportId);
+            const zoomContent = document.getElementById(contentId);
+            const image = document.getElementById(imageId);
+            
+            if (!zoomViewport || !zoomContent || !image) return;
+            
+            let scale = 1;
+            let translateX = 0;
+            let translateY = 0;
+            let isDragging = false;
+            let startX, startY;
+            let initialTranslateX, initialTranslateY;
+            
+            function initializeZoom() {
+                const viewportWidth = zoomViewport.clientWidth;
+                const viewportHeight = zoomViewport.clientHeight;
+                const imgWidth = image.naturalWidth || image.width;
+                const imgHeight = image.naturalHeight || image.height;
+                
+                const scaleX = viewportWidth / imgWidth;
+                const scaleY = viewportHeight / imgHeight;
+                scale = Math.min(scaleX, scaleY) * 0.9;
+                
+                translateX = (viewportWidth - imgWidth * scale) / 2;
+                translateY = (viewportHeight - imgHeight * scale) / 2;
+                
+                updateTransform();
+            }
+            
+            function updateTransform() {
+                zoomContent.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+            }
+            
+            function zoomIn() {
+                scale *= 1.2;
+                updateTransform();
+            }
+            
+            function zoomOut() {
+                scale /= 1.2;
+                if (scale < 0.1) scale = 0.1;
+                updateTransform();
+            }
+            
+            function resetZoom() {
+                initializeZoom();
+            }
+            
+            // Mouse wheel zoom
+            zoomViewport.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                
+                const rect = zoomViewport.getBoundingClientRect();
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+                
+                const oldScale = scale;
+                
+                if (e.deltaY < 0) {
+                    scale *= 1.1;
+                } else {
+                    scale /= 1.1;
+                    if (scale < 0.1) scale = 0.1;
+                }
+                
+                const scaleChange = scale / oldScale;
+                translateX = mouseX - (mouseX - translateX) * scaleChange;
+                translateY = mouseY - (mouseY - translateY) * scaleChange;
+                
+                updateTransform();
+            }, { passive: false });
+            
+            // Mouse drag for panning
+            zoomViewport.addEventListener('mousedown', function(e) {
+                if (e.button !== 0) return;
+                
+                isDragging = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                initialTranslateX = translateX;
+                initialTranslateY = translateY;
+                
+                zoomViewport.style.cursor = 'grabbing';
+                e.preventDefault();
+            });
+            
+            document.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+                
+                const deltaX = e.clientX - startX;
+                const deltaY = e.clientY - startY;
+                
+                translateX = initialTranslateX + deltaX;
+                translateY = initialTranslateY + deltaY;
+                
+                updateTransform();
+            });
+            
+            document.addEventListener('mouseup', function() {
+                if (isDragging) {
+                    isDragging = false;
+                    zoomViewport.style.cursor = 'grab';
+                }
+            });
+            
+            // Touch events for mobile
+            let touchStartDistance = 0;
+            let touchStartScale = 1;
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let touchStartTranslateX = 0;
+            let touchStartTranslateY = 0;
+            
+            zoomViewport.addEventListener('touchstart', function(e) {
+                if (e.touches.length === 1) {
+                    const touch = e.touches[0];
+                    touchStartX = touch.clientX;
+                    touchStartY = touch.clientY;
+                    touchStartTranslateX = translateX;
+                    touchStartTranslateY = translateY;
+                } else if (e.touches.length === 2) {
+                    const touch1 = e.touches[0];
+                    const touch2 = e.touches[1];
+                    
+                    touchStartDistance = Math.hypot(
+                        touch2.clientX - touch1.clientX,
+                        touch2.clientY - touch1.clientY
+                    );
+                    touchStartScale = scale;
+                    touchStartX = (touch1.clientX + touch2.clientX) / 2;
+                    touchStartY = (touch1.clientY + touch2.clientY) / 2;
+                    touchStartTranslateX = translateX;
+                    touchStartTranslateY = translateY;
+                }
+                
+                e.preventDefault();
+            }, { passive: false });
+            
+            zoomViewport.addEventListener('touchmove', function(e) {
+                if (e.touches.length === 1) {
+                    const touch = e.touches[0];
+                    const deltaX = touch.clientX - touchStartX;
+                    const deltaY = touch.clientY - touchStartY;
+                    
+                    translateX = touchStartTranslateX + deltaX;
+                    translateY = touchStartTranslateY + deltaY;
+                    
+                    updateTransform();
+                } else if (e.touches.length === 2) {
+                    const touch1 = e.touches[0];
+                    const touch2 = e.touches[1];
+                    
+                    const currentDistance = Math.hypot(
+                        touch2.clientX - touch1.clientX,
+                        touch2.clientY - touch1.clientY
+                    );
+                    
+                    if (touchStartDistance > 0) {
+                        scale = touchStartScale * (currentDistance / touchStartDistance);
+                        if (scale < 0.1) scale = 0.1;
+                        if (scale > 5) scale = 5;
+                        
+                        const scaleChange = scale / touchStartScale;
+                        const rect = zoomViewport.getBoundingClientRect();
+                        const currentCenterX = (touch1.clientX + touch2.clientX) / 2;
+                        const currentCenterY = (touch1.clientY + touch2.clientY) / 2;
+                        const viewportCenterX = currentCenterX - rect.left;
+                        const viewportCenterY = currentCenterY - rect.top;
+                        
+                        translateX = viewportCenterX - (viewportCenterX - touchStartTranslateX) * scaleChange;
+                        translateY = viewportCenterY - (viewportCenterY - touchStartTranslateY) * scaleChange;
+                        
+                        updateTransform();
+                    }
+                }
+                
+                e.preventDefault();
+            }, { passive: false });
+            
+            // Button event listeners using data attributes
+            zoomViewport.querySelectorAll('.zoom-btn').forEach(btn => {
+                const action = btn.dataset.action;
+                if (action === 'zoomIn') btn.addEventListener('click', zoomIn);
+                if (action === 'zoomOut') btn.addEventListener('click', zoomOut);
+                if (action === 'zoomReset') btn.addEventListener('click', resetZoom);
+            });
+            
+            // Legacy button support (for original architecture diagram)
+            const legacyZoomIn = document.getElementById('zoomInBtn');
+            const legacyZoomOut = document.getElementById('zoomOutBtn');
+            const legacyZoomReset = document.getElementById('zoomResetBtn');
+            if (legacyZoomIn && zoomViewport.contains(legacyZoomIn)) {
+                legacyZoomIn.addEventListener('click', zoomIn);
+                legacyZoomOut.addEventListener('click', zoomOut);
+                legacyZoomReset.addEventListener('click', resetZoom);
+            }
+            
+            // Initialize when image loads
+            if (image.complete) {
+                initializeZoom();
+            } else {
+                image.addEventListener('load', initializeZoom);
+            }
+            
+            window.addEventListener('resize', initializeZoom);
+        }
+        
+        // Initialize all zoom viewers on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Original architecture diagram
+            initZoomViewer('architectureZoomViewport', 'architectureZoomContent', 'architectureImage');
+            // System Flow diagram
+            initZoomViewer('flowZoomViewport', 'flowZoomContent', 'flowImage');
+            // Micro:bit flowchart
+            initZoomViewer('microbitZoomViewport', 'microbitZoomContent', 'microbitImage');
+            // Python model flowchart
+            initZoomViewer('pythonZoomViewport', 'pythonZoomContent', 'pythonImage');
+            
+            // System Flow zoom button handlers
+            const flowZoomIn = document.getElementById('flowZoomInBtn');
+            const flowZoomOut = document.getElementById('flowZoomOutBtn');
+            const flowZoomReset = document.getElementById('flowZoomResetBtn');
+            if (flowZoomIn) {
+                const flowViewport = document.getElementById('flowZoomViewport');
+                const flowContent = document.getElementById('flowZoomContent');
+                const flowImage = document.getElementById('flowImage');
+                if (flowViewport && flowContent && flowImage) {
+                    let flowScale = 1;
+                    let flowTranslateX = 0;
+                    let flowTranslateY = 0;
+                    
+                    function updateFlowTransform() {
+                        flowContent.style.transform = `translate(${flowTranslateX}px, ${flowTranslateY}px) scale(${flowScale})`;
+                    }
+                    
+                    function initFlowZoom() {
+                        const viewportWidth = flowViewport.clientWidth;
+                        const viewportHeight = flowViewport.clientHeight;
+                        const imgWidth = flowImage.naturalWidth || flowImage.width;
+                        const imgHeight = flowImage.naturalHeight || flowImage.height;
+                        flowScale = Math.min(viewportWidth / imgWidth, viewportHeight / imgHeight) * 0.9;
+                        flowTranslateX = (viewportWidth - imgWidth * flowScale) / 2;
+                        flowTranslateY = (viewportHeight - imgHeight * flowScale) / 2;
+                        updateFlowTransform();
+                    }
+                    
+                    if (flowImage.complete) {
+                        initFlowZoom();
+                    } else {
+                        flowImage.addEventListener('load', initFlowZoom);
+                    }
+                    
+                    flowZoomIn.addEventListener('click', function() {
+                        flowScale *= 1.2;
+                        updateFlowTransform();
+                    });
+                    flowZoomOut.addEventListener('click', function() {
+                        flowScale /= 1.2;
+                        if (flowScale < 0.1) flowScale = 0.1;
+                        updateFlowTransform();
+                    });
+                    flowZoomReset.addEventListener('click', initFlowZoom);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+{
+  "session": {
+    "id": "2026-03-10_23-55-24",
+    "start_time": "2026-03-10 23:55:24",
+    "end_time": "2026-03-10 23:56:50",
+    "source": "sensor",
+    "scenario": "",
+    "readings_count": 43,
+    "csv_file": "2026-03-10_23-55-24.csv",
+    "meta_file": "2026-03-10_23-55-24_meta.json"
+  },
+  "alerts": [
+    {
+      "timestamp": "2026-03-10 23:56:15",
+      "level": "HIGH",
+      "message": "Risk HIGH: Temp=23.0\u00b0C, Light=206 \u2014 Conditions are concerning. Monitor closely."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:17",
+      "level": "CRITICAL",
+      "message": "Risk CRITICAL: Temp=23.0\u00b0C, Light=229 \u2014 Extreme danger! Immediate action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:20",
+      "level": "CRITICAL",
+      "message": "Risk CRITICAL: Temp=23.0\u00b0C, Light=228 \u2014 Extreme danger! Immediate action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:21",
+      "level": "CRITICAL",
+      "message": "Risk CRITICAL: Temp=23.0\u00b0C, Light=233 \u2014 Extreme danger! Immediate action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:23",
+      "level": "CRITICAL",
+      "message": "Risk CRITICAL: Temp=23.0\u00b0C, Light=224 \u2014 Extreme danger! Immediate action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:25",
+      "level": "CRITICAL",
+      "message": "Risk CRITICAL: Temp=23.0\u00b0C, Light=226 \u2014 Extreme danger! Immediate action required."
+    }
+  ],
+  "advice": [
+    {
+      "timestamp": "2026-03-10 23:55:25",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:27",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:29",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:31",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:33",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:35",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:37",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:39",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:41",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:43",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:45",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:47",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:49",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:51",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:53",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:55",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:57",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:55:59",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:01",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:03",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:05",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:07",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:09",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:11",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:13",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:15",
+      "urgency": "URGENT",
+      "message": "\ud83d\udd36 Significant risk \u2014 activate fire watch protocols."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:15",
+      "urgency": "URGENT",
+      "message": "\ud83d\udebf Increase irrigation to vulnerable vegetation."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:15",
+      "urgency": "WARNING",
+      "message": "\ud83d\udccb Review and brief emergency response procedures."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:15",
+      "urgency": "URGENT",
+      "message": "\u2600\ufe0f Light level 206 is high \u2014 solar drying risk increases."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:15",
+      "urgency": "WARNING",
+      "message": "\ud83d\udcc8 Light intensity rising \u2014 expect further soil moisture loss."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:17",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\udd34 EXTREME DANGER \u2014 initiate emergency response NOW."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:17",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\ude92 Alert fire services and begin evacuation of at-risk zones."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:17",
+      "urgency": "URGENT",
+      "message": "\ud83d\udca7 Deploy maximum irrigation and wet-down perimeters."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:17",
+      "urgency": "URGENT",
+      "message": "\ud83d\udce1 Broadcast public safety warnings immediately."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:17",
+      "urgency": "CRITICAL",
+      "message": "\u2600\ufe0f Light level 229 exceeds critical threshold (220)."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:17",
+      "urgency": "URGENT",
+      "message": "\ud83c\udfd7\ufe0f Deploy shade covers or reflective barriers on crops."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:20",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\udd34 EXTREME DANGER \u2014 initiate emergency response NOW."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:20",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\ude92 Alert fire services and begin evacuation of at-risk zones."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:20",
+      "urgency": "URGENT",
+      "message": "\ud83d\udca7 Deploy maximum irrigation and wet-down perimeters."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:20",
+      "urgency": "URGENT",
+      "message": "\ud83d\udce1 Broadcast public safety warnings immediately."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:20",
+      "urgency": "CRITICAL",
+      "message": "\u2600\ufe0f Light level 228 exceeds critical threshold (220)."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:20",
+      "urgency": "URGENT",
+      "message": "\ud83c\udfd7\ufe0f Deploy shade covers or reflective barriers on crops."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:21",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\udd34 EXTREME DANGER \u2014 initiate emergency response NOW."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:21",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\ude92 Alert fire services and begin evacuation of at-risk zones."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:21",
+      "urgency": "URGENT",
+      "message": "\ud83d\udca7 Deploy maximum irrigation and wet-down perimeters."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:21",
+      "urgency": "URGENT",
+      "message": "\ud83d\udce1 Broadcast public safety warnings immediately."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:21",
+      "urgency": "CRITICAL",
+      "message": "\u2600\ufe0f Light level 233 exceeds critical threshold (220)."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:21",
+      "urgency": "URGENT",
+      "message": "\ud83c\udfd7\ufe0f Deploy shade covers or reflective barriers on crops."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:23",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\udd34 EXTREME DANGER \u2014 initiate emergency response NOW."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:23",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\ude92 Alert fire services and begin evacuation of at-risk zones."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:23",
+      "urgency": "URGENT",
+      "message": "\ud83d\udca7 Deploy maximum irrigation and wet-down perimeters."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:23",
+      "urgency": "URGENT",
+      "message": "\ud83d\udce1 Broadcast public safety warnings immediately."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:23",
+      "urgency": "CRITICAL",
+      "message": "\u2600\ufe0f Light level 224 exceeds critical threshold (220)."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:23",
+      "urgency": "URGENT",
+      "message": "\ud83c\udfd7\ufe0f Deploy shade covers or reflective barriers on crops."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:25",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\udd34 EXTREME DANGER \u2014 initiate emergency response NOW."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:25",
+      "urgency": "CRITICAL",
+      "message": "\ud83d\ude92 Alert fire services and begin evacuation of at-risk zones."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:25",
+      "urgency": "URGENT",
+      "message": "\ud83d\udca7 Deploy maximum irrigation and wet-down perimeters."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:25",
+      "urgency": "URGENT",
+      "message": "\ud83d\udce1 Broadcast public safety warnings immediately."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:25",
+      "urgency": "CRITICAL",
+      "message": "\u2600\ufe0f Light level 226 exceeds critical threshold (220)."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:25",
+      "urgency": "URGENT",
+      "message": "\ud83c\udfd7\ufe0f Deploy shade covers or reflective barriers on crops."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:27",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:29",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:31",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:33",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:35",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:37",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:39",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:41",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:43",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:46",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:48",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    },
+    {
+      "timestamp": "2026-03-10 23:56:50",
+      "urgency": "INFO",
+      "message": "\u2705 Conditions are safe \u2014 no action required."
+    }
+  ]
+}
