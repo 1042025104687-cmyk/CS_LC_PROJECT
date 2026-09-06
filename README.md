@@ -14,6 +14,10 @@ The website is deployed automatically from the `report/` directory whenever a
 report file is pushed to the `main` branch. The Python application is not a web
 application; its complete source remains available in this repository.
 
+The deployment workflow publishes the site to the `gh-pages` branch. In
+repository **Settings → Pages**, set the source to **Deploy from a branch** and
+select `gh-pages` (root) once.
+
 ## Repository structure
 
 ```text
