@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Prism CSS theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <h1>Create</h1>
+    <div class="page-wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meeting_the_brief.html">Meeting Brief</a></li>
+                <li><a href="investigation.html">Investigation</a></li>
+                <li><a href="plan_and_design.html">Plan & Design</a></li>
+                <li><a href="create.html" class="active">Create</a></li>
+                <li><a href="evaluation.html">Evaluation</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-layout">
+            <aside>
+                <div class="toc">
+                    <h3>On this page</h3>
+                    <ul>
+                        <li><a href="#milestones">Key Milestones</a></li>
+                        <li><a href="#milestones">Key Milestones</a></li>
+                        <li><a href="#testing">Testing</a></li>
+                        <li><a href="#problem">Problem Encountered</a></li>
+                        <li><a href="#model">Model Explanation</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="content">
+                <section id="milestones">
+                    <h2>Key Milestones</h2>
+                    <p>I use the <strong><a href="https://www.tutorialspoint.com/sdlc/sdlc_waterfall_model.htm" target="_blank" rel="noopener noreferrer">Waterfall Planning model</a></strong> in five phases from December 2025 to March 2026. Each phase has to be mostly complete before proceeding to the next.</p>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">1</div>
+                            <div class="timeline-content">
+                                <h4>Planning (Dec 2025)</h4>
+                                <p>I research existing systems and note what my system needs to do. The hardest part is deciding which features to include. I have to cut a lot of ideas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">2</div>
+                            <div class="timeline-content">
+                                <h4>Core Modules (Dec 2025 – Jan 2026)</h4>
+                                <p>I build the foundation: <code>SettingsManager</code> for saving preferences to JSON, <code>CsvManager</code> for logging sensor data, <code>SerialManager</code> for micro:bit communication, and <code>DataProcessor</code> for parsing readings. Making the CSV loader compatible with older file formats is difficult.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">3</div>
+                            <div class="timeline-content">
+                                <h4>Risk Models (Jan – Feb 2026)</h4>
+                                <p>I implement <code>WildfireModel</code> with its weighted formula (45% temperature, 35% light, 20% wind). I also make <code>AlertManager</code> for notifications and <code>FeedbackEngine</code> for generating advice based on sensor trends. At the start escalation triggers too aggressively.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">4</div>
+                            <div class="timeline-content">
+                                <h4>GUI & Integration (Feb 2026)</h4>
+                                <p>I create the Tkinter interface with 7 tabs. I make a <code>Controller</code> class to separate main logic from the UI. I also add the <code>Simulator</code> with 7 preset scenarios for testing.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">5</div>
+                            <div class="timeline-content">
+                                <h4>Tests & Portfolio (Mar 2026)</h4>
+                                <p>I write test files covering all modules using pytest. I run stress tests with extreme values and 30-day simulated trends. I finish my video evidence and portfolio-site writeup.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <section id="testing">
+                    <h2>Testing</h2>
+
+                    <table class="test-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Test</th>
+                                <th scope="col">Input</th>
+                                <th scope="col">Expected Output</th>
+                                <th scope="col">Actual Output</th>
+                                <th scope="col">Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WildfireModel — Extreme</td>
+                                <td>50°C, 255 light, 50 km/h wind</td>
+                                <td>Extreme (score 100)</td>
+                                <td>Extreme (score 100)</td>
+                                <td class="pass">Pass</td>
+                            </tr>
+                            <tr>
+                                <td>WildfireModel — Low</td>
+                                <td>−5°C, 0 light, 0 km/h wind</td>
+                                <td>Low (score 0)</td>
+                                <td>Low (score 0)</td>
+                                <td class="pass">Pass</td>
+                            </tr>
+                            <tr>
+                                <td>RiskEngine — Normal</td>
+                                <td>20°C, 80 light</td>
+                                <td>LOW</td>
+                                <td>LOW</td>
+                                <td class="pass">Pass</td>
+                            </tr>
+                            <tr>
+                                <td>DataProcessor — Valid</td>
+                                <td>"23.5,147"</td>
+                                <td>{temp: 23.5, light: 147}</td>
+                                <td>{temp: 23.5, light: 147}</td>
+                                <td class="pass">Pass</td>
+                            </tr>
+                            <tr>
+                                <td>DataProcessor — Rejected</td>
+                                <td>"81,100" (temp > 80)</td>
+                                <td>None (rejected)</td>
+                                <td>None</td>
+                                <td class="pass">Pass</td>
+                            </tr>
+                            <tr>
+                                <td>Drought Stress Test</td>
+                                <td>48°C, 250 light, 45 km/h</td>
+                                <td>Extreme (score ≥ 75)</td>
+                                <td>Extreme (score 95)</td>
+                                <td class="pass">Pass</td>
+                            </tr>
+                            <tr>
+                                <td>Serial Reliability</td>
+                                <td>1000 readings at 1 Hz</td>
+                                <td>1000/1000 received</td>
+                                <td>1000/1000 received</td>
+                                <td class="pass">Pass</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Test methods</h3>
+                    <p>Each module is tested individually using pytest to ensure correct outputs. Integration tests are done to catch and identify any problems, including data processing, risk calculation, and feedback mechanisms.</p>
+                </section>
+
+                <section id="problem">
+                    <h2>Problem Encountered</h2>
+                    
+                    <h3>Micro:bit LED Not Displaying Wanted Feedback</h3>
+                    <p>During testing, I notice the Python application calculates risk levels correctly and logs them to the console and CSV file, but the micro:bit display remains blank. The visual feedback loop is broken — users cannot see the current risk level on the physical device itself, which defeats the purpose of having a portable warning indicator.</p>
+                    
+                    <h3>Debugging Process</h3>
+                    <p>I repetitively used print statements to debug each module and identify where the problem occurs. The serial connection works correctly (sensor data arrives at the Python app), but the micro:bit script is not listening for incoming commands after sending its data. I use a serial tool to verify that the Python application does send <code>RISK:HIGH</code> commands back, confirming the issue is on the micro:bit receiving side rather than the Python transmission.</p>
+                    
+                    <h3>The Solution</h3>
+                    <p>I redesign the micro:bit controller converting to <a href="https://python.microbit.org/">MicroPython</a>. I felt it would increase my productivity as block coding is more limited. The new script checks for incoming serial data after each sensor read using <code>uart.any()</code>. When it receives a <code>RISK:level</code> command, it updates the current risk level and displays the corresponding LED pattern and/or plays audio.</p>
+                    
+                    <figure>
+                        <video src="../resources/Problemencountered.mov" controls>
+                            <p>Your browser does not support the video tag.</p>
+                        </video>
+                        <figcaption>LED patterns for LOW (dim dot), MODERATE (square), HIGH (cross), and CRITICAL (checkerboard).</figcaption>
+                    </figure>
+
+                    <div class="code-block-wrapper">
+                        <div class="code-header">MicroPython - Fixed micro:bit script</div>
+                        <pre><code class="language-python"># 4. Check for incoming commands from the desktop app
+    if uart.any():
+        incoming = uart.read()
+        if incoming:
+            uart_buffer += str(incoming, "utf-8")
+
+    # Process complete lines in the buffer
+    while "\n" in uart_buffer:
+        line, uart_buffer = uart_buffer.split("\n", 1)
+        line = line.strip()
+        if line.startswith("RISK:"):
+            level = line[5:]
+            if level in RISK_IMAGES:
+                current_risk = level
+        elif line.startswith("RATE:"):
+            # Dynamic Sampling Rate: desktop app controls read frequency
+            try:
+                new_rate = int(line[5:])
+                if 100 <= new_rate <= 600000:
+                    sample_interval = new_rate
+            except ValueError:
+                pass  # Ignore malformed RATE values    # 5. LED feedback – show the icon for the current risk level
+    display.show(RISK_IMAGES.get(current_risk, RISK_IMAGES["LOW"]))
+
+    # 6. Audio feedback – only on risk-level *transitions*
+    if current_risk != previous_risk:
+        play_risk_sound(current_risk)
+        previous_risk = current_risk</code></pre>
+                    </div>
+                </section>
+
+                <section id="model">
+                    <div><h2>Overview</h2>
+                    <h3>Model Explanation</h3></div>
+                    <p>The Wildfire Model is a model that predicts wildfire risk on a 0–100 scale using three sensor inputs. It's designed to meet the brief's requirements for disaster risk modelling, adaptive system, and also triggering alerts based on environmental conditions.</p>
+                    <h3>Inputs</h3>
+                    <div class="technology-grid">
+                        <div class="tech-card">
+                            <h4>Temperature</h4>
+                            <p class="tech-description">Source: micro:bit sensor, temperature (°C).</p>
+                        </div>
+                        <div class="tech-card">
+                            <h4>Light level</h4>
+                            <p class="tech-description">Source: micro:bit sensor, light sensor (0–255).</p>
+                        </div>
+                        <div class="tech-card">
+                            <h4>Wind speed</h4>
+                            <p class="tech-description">Source: simulated or configured value (km/h).</p>
+                        </div>
+                    </div>
+                    <h3>Processing & Algorithm</h3>
+                    <div class="code-block-wrapper">
+                        <div class="code-header">Pseudocode - Wildfire Risk Prediction</div>
+                        <pre><code class="language-plaintext">FUNCTION predict(temperature, light, wind_speed):
+    # Step 1: Normalise inputs to 0-1 range
+    norm_temp  = (temperature + 10) / 60    # range -10 to 50 → 0 to 1
+    norm_light = light / 255                 # range 0 to 255 → 0 to 1
+    norm_wind  = wind_speed / 50             # range 0 to 50 → 0 to 1
+
+    # Step 2: Apply weighted combination (weights sum to 1.0)
+    score = (0.45 × norm_temp + 0.35 × norm_light + 0.20 × norm_wind) × 100
+    
+    # Step 3: Clamp score to valid range
+    score = CLAMP(score, 0, 100)
+    
+    # Step 4: Map to risk category
+    IF score >= 75: RETURN "Extreme"
+    IF score >= 50: RETURN "High"
+    IF score >= 25: RETURN "Moderate"
+    RETURN "Low"</code></pre>
+                    </div>
+
+                    <div class="code-block-wrapper">
+                        <div class="code-header">Python - wildfire_model.py</div>
+                        <pre><code class="language-python">def predict(self, temperature, light, wind_speed=None):
+    """
+    Calculate fire risk from three sensor inputs.
+    Returns a score from 0 to 100 and a category (Low/Moderate/High/Extreme).
+    """
+    # If no wind data, use a default value
+    if wind_speed is None or (isinstance(wind_speed, float) and math.isnan(wind_speed)):
+        wind_speed = self.default_wind
+
+    # Step 1: Scale each input from 0 to 1 (normalisation)
+    norm_temp = self._normalise(temperature, self.temp_min, self.temp_max)   # e.g. 30°C → 0.67
+    norm_light = self._normalise(light, self.light_min, self.light_max)      # e.g. 200 → 0.78
+    norm_wind = self._normalise(wind_speed, self.wind_min, self.wind_max)    # e.g. 25 km/h → 0.50
+
+    # Step 2: Multiply each normalised value by its weight, then sum
+    # Weights: temp=0.45, light=0.35, wind=0.20 (must add to 1.0)
+    # Multiply by 100 to get a score from 0 to 100
+    raw_score = (self.w_temp * norm_temp + self.w_light * norm_light + self.w_wind * norm_wind) * 100.0
+
+    # Step 3: Clamp the score between 0 and 100
+    risk_score = self._clamp(round(raw_score, 1), 0.0, 100.0)
+
+    # Step 4: Convert score to a category (Low, Moderate, High, Extreme)
+    risk_category = self._categorise(risk_score)
+
+    return {
+        "risk_score": risk_score,
+        "risk_category": risk_category,
+        "prediction": f"{risk_category} Probability of Fire (score {risk_score:.0f}/100)",
+    }</code></pre>
+                    </div>
+                </section>
+                <section id="outputs">
+                    <div>
+                        <h2>Outputs</h2>  
+                    </div>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <h4>risk_score</h4>
+                            <p class="tech-description">Value 0–100 displayed on the dashboard.</p>
+                        </div>
+                        <div class="tech-card">
+                            <h4>risk_category</h4>
+                            <p class="tech-description">Low (0–24), Moderate (25–49), High (50–74), Extreme (75–100).</p>
+                        </div>
+                    </div>
+                    <p>When score ≥ 50, the system triggers an alert, communicates and triggers micro:bit prevention measures, then logs the event.</p>
+                    <a href="#" class="back-to-top">Back to top</a>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</body>
+</html>

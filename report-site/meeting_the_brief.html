@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Brief</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meeting Brief</h1>
+    <div class="page-wrapper">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meeting_the_brief.html" class="active">Meeting Brief</a></li>
+            <li><a href="investigation.html">Investigation</a></li>
+            <li><a href="plan_and_design.html">Plan & Design</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-layout">
+        <aside>
+            <div class="toc">
+                <h3>On this page</h3>
+                <ul>
+                    <li><a href="#video">Report Video</a></li>
+                    <li><a href="#mapping">Requirements Mapping</a></li>
+                    <li><a href="#analysis">Analysis</a></li>
+                    <li><a href="#basic">Basic Requirements</a></li>
+                    <li><a href="#advanced">Advanced Requirements</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content">
+            <section id="video">
+                <h2>Report Video</h2>
+                <figure>
+                    <video src="../resources/project_draft_1(1).mp4" controls></video>
+                    <figcaption>Video demonstrating how the artefact meets each requirement of the brief.</figcaption>
+                </figure>
+            </section>
+
+            <section id="mapping">
+                <h2>Video Structure &amp; Requirements Mapping</h2>
+                <table class="requirements-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Section</th>
+                            <th>Requirement shown</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0:22</td>
+                            <td>Introduction</td>
+                            <td>Overview of Drought Wildfire Risk System (micro:bit + Python)</td>
+                        </tr>
+                        <tr>
+                            <td>2:13</td>
+                            <td>Basic 1 &amp; 2</td>
+                            <td>Digital input, analogue input, auto operation, LED/sound output, CSV/JSON storage</td>
+                        </tr>
+                        <tr>
+                            <td>2:25</td>
+                            <td>Basic 3</td>
+                            <td>Process simulation 7 varying scenarios</td>
+                        </tr>
+                        <tr>
+                            <td>2:50</td>
+                            <td>Advanced 1</td>
+                            <td>Disaster risk model: WildfireModel calculates 0–100 risk score from temp, light, wind</td>
+                        </tr>
+                        <tr>
+                            <td>3:10</td>
+                            <td>Advanced 2</td>
+                            <td>What-if simulations: stress tests (extreme conditions) + trend tests (30-day prediction)</td>
+                        </tr>
+                        <tr>
+                            <td>3:45</td>
+                            <td>Advanced 3</td>
+                            <td>Adaptive feedback: Risk system with memory and threshold scaling</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="analysis">
+                <h2>Analysis of the Brief</h2>
+                <p>The brief asks to build an embedded system using a micro:bit to simulate a forest-related process.</p>
+                <p>I also needed a Python model to test what-if scenarios and make predictions. The system must adapt its feedback based on received data.</p>
+            </section>
+
+            <section id="basic">
+                <h2>How the Basic Requirements Were Met</h2>
+                <h3>BR1. Embedded System Design</h3>
+                <p>A micro:bit collects temperature and light readings, sending data to the computer via USB.</p>
+                <p>The micro:bit receives risk updates from the Python GUI, showing patterns and playing sounds. Once connected, the system runs autonomously.</p>
+
+                <h3>BR2. Data Collection</h3>
+                <p>Sensor readings saved with timestamps in CSV files. Session information is separate.</p>
+                <p>I can review past data through the History tab in the interface.</p>
+
+                <h3>BR3. Process Simulation</h3>
+                <p>I built several scenarios to test system's behavior in difficult conditions.</p>
+                <img src="../resources/img/basic_proof_1.png" alt="Screenshot showing the Forest Risk Prevention System dashboard" class="full-width-image">
+            </section>
+
+            <section id="advanced">
+                <h2>How the Advanced Requirements Were Met</h2>
+                <h3>1. Disaster Risk Modelling</h3>
+                <p>I made a wildfire risk model. It uses temperature, light, and wind speed to give a score.</p>
+                <p>The score is grouped into four levels. Since the micro:bit has no wind sensor, I simulated a wind value.</p>
+
+                <h3>2. What-If Simulations</h3>
+                <p>I created two types of what-if simulation.</p>
+                <p>Firstly, a stress test applying extreme conditions.</p>
+                <p>Secondly, a trend test simulating a longer period. Values in the Model tab can be used to test any situations.</p>
+
+                <h3>3. Adaptive System</h3>
+                <p>The system is adaptive it responds to recent readings instead of treating every reading the same.</p>
+                <p>It keeps track of the last 10 readings. It values temperature more when it's 28°C. If high-risk conditions persist, warning thresholds lower.</p>
+                <p>The model also adjusts itself depending on which sensor is changing the most. As conditions change, everything updates in real time.</p>
+                <a href="#" class="back-to-top">Back to top</a>
+            </section>
+        </div>
+    </main>
+    </div>
+</body>
+</html>
