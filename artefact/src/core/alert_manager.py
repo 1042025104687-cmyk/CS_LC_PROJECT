@@ -2,7 +2,18 @@
 
 from __future__ import annotations
 
-import winsound
+try:
+    import winsound
+except ImportError:
+    class _SilentWinsound:
+        """Provide a no-op beep on platforms without Windows audio support."""
+
+        @staticmethod
+        def Beep(frequency, duration):
+            return None
+
+    winsound = _SilentWinsound()
+
 from collections import namedtuple
 from datetime import datetime
 
